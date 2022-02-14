@@ -31,4 +31,4 @@ app.post('/tokenuri', async (req, res) => {
     res.send(tempUri);
 });
 
-app.listen(3001, () => console.log('Example app is listening on port 3001.'));
+app.listen(80, () => console.log('Example app is listening on port 3001.'));
