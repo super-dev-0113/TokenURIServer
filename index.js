@@ -31,4 +31,6 @@ app.post('/tokenuri', async (req, res) => {
     res.send(tempUri);
 });
 
-app.listen(5000, () => console.log('Example app is listening on port 3001.'));
+app.listen(process.env.PORT || 3001, '0.0.0.0', () => {
+    console.log("Server is running.");
+  });
